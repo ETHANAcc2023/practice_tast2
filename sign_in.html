@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="outline outline-black">
+        <form method="POST" class="space-y-3 grid p-2 justify-center">
+            {{ form.hidden_tag() }}
+            <div class="p-3">
+                {{ form.username.label(class="font-semibold") }}
+                {{ form.username(class="outline outline-black") }}
+            </div>
+            <div class="p-3">
+                {{ form.email.label(class="font-semibold") }}
+                {{ form.email(class="outline outline-black") }}
+            </div>
+            <div class="p-3">
+                {{ form.password.label(class="font-semibold") }}
+                {{ form.password(class="outline outline-black") }}
+            </div>
+            <div class="p-3">
+                {{ form.submit(class="font-semibold rounded-md bg bg-blue-400 p-2") }}
+            </div>
+        </form>
+    </div>
+{% endblock %}

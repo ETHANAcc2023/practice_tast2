@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for story in data %}
+        <div class = "outline outline-black text-lg p-3 mt-1">
+            <p class="font-semibold">{{story.title}}</p>
+            <p>{{story.Content}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
